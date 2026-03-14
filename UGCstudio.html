@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#4e453a",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "secondary": "#5f5e5e",
+              "surface": "#fbf9f7",
+              "primary-container": "#e3d5c5",
+              "inverse-on-surface": "#f2f0ee",
+              "on-surface": "#1b1c1b",
+              "outline": "#7d766d",
+              "secondary-container": "#e2dfde",
+              "on-primary-container": "#665c4f",
+              "on-primary-fixed": "#211a11",
+              "on-background": "#1b1c1b",
+              "on-secondary-container": "#636262",
+              "on-surface-variant": "#4c463e",
+              "on-secondary-fixed-variant": "#474746",
+              "tertiary-fixed": "#e0e2eb",
+              "primary-fixed": "#efe0d0",
+              "surface-dim": "#dbdad8",
+              "outline-variant": "#cfc5bb",
+              "background": "#fbf9f7",
+              "on-tertiary-container": "#5a5d65",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#44474e",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f5f3f1",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#e5e2e1",
+              "surface-variant": "#e4e2e0",
+              "tertiary-container": "#d5d7e0",
+              "primary-fixed-dim": "#d2c4b5",
+              "primary": "#675d50",
+              "inverse-surface": "#30302f",
+              "tertiary": "#5b5e66",
+              "on-secondary-fixed": "#1c1b1b",
+              "surface-container-highest": "#e4e2e0",
+              "secondary-fixed-dim": "#c8c6c5",
+              "inverse-primary": "#d2c4b5",
+              "surface-container": "#efedec",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#eae8e6",
+              "surface-tint": "#675d50",
+              "tertiary-fixed-dim": "#c4c6cf",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#fbf9f7",
+              "on-tertiary-fixed": "#181c22"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Newsreader", "serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+                "none": "0px",
+                "DEFAULT": "0px",
+                "lg": "0px",
+                "xl": "0px",
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f7;
+            font-family: 'Newsreader', serif;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+        .masonry-video-container {
+            columns: 1;
+        }
+        @media (min-width: 768px) {
+            .masonry-video-container {
+                columns: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry-video-container {
+                columns: 3;
+            }
+        }
+        .glass-nav {
+            background: rgba(251, 249, 247, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="text-on-surface selection:bg-primary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<nav class="glass-nav sticky top-0 z-50 border-b border-outline-variant/10 px-8 py-6">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<div class="flex items-center gap-4">
+<span class="font-headline text-xl font-semibold tracking-tight">Milk House Media Co</span>
+</div>
+<div class="hidden md:flex gap-10">
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Index.html">Home</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="about.html">About/Work</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Creator.html">Creator Network</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<a class="bg-primary text-on-primary px-8 py-3 font-label text-[0.6875rem] uppercase tracking-widest hover:opacity-90 transition-opacity" href="contact.html">
+                Tell us what you are building
+            </a>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="pt-24 pb-16 px-6 md:px-12 max-w-7xl mx-auto">
+<div class="editorial-grid">
+<div class="col-span-12 lg:col-span-8 lg:ml-[8%]">
+<span class="font-label text-xs tracking-[0.3em] uppercase text-outline mb-6 block">The UGC Studio</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-12 tracking-tighter">
+                        UGC by Kiarah
+                    </h1>
+<div class="flex flex-wrap gap-4 mb-16">
+<span class="bg-surface-container-high px-6 py-2 font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Creator portfolio</span>
+<span class="bg-surface-container-high px-6 py-2 font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Lifestyle partnerships</span>
+<span class="bg-surface-container-high px-6 py-2 font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Hospitality and travel</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Identity / Narrative Section -->
+<section class="bg-surface-container-low py-24 px-6 md:px-12">
+<div class="max-w-7xl mx-auto editorial-grid">
+<div class="col-span-12 lg:col-span-5 lg:col-start-2">
+<h2 class="font-headline text-3xl md:text-4xl mb-8 leading-snug">
+                        MHM produces native content through a lens of authenticity and strategic curation.
+                    </h2>
+</div>
+<div class="col-span-12 lg:col-span-5 lg:col-start-7">
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed mb-8">
+                        We bridge the gap between high-end brand identity and the raw, engaging nature of user-generated content. Led by our founder and supported by an elite network of creator partners, we produce assets that feel organic yet purposeful.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label text-xs tracking-widest uppercase">Short-form Video</span>
+</div>
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label text-xs tracking-widest uppercase">Product Demos &amp; Reviews</span>
+</div>
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label text-xs tracking-widest uppercase">Lifestyle Photography</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pull Quote Break -->
+<section class="py-20 max-w-4xl mx-auto px-6 italic text-center">
+<blockquote class="font-headline text-3xl md:text-5xl text-primary leading-tight">
+                "Content that doesn't feel like an ad, but performs like the best one you've ever run."
+            </blockquote>
+</section>
+<!-- Media Grid: Clean Masonry -->
+<section class="pb-32 px-6 md:px-12 max-w-[1600px] mx-auto">
+<div class="flex items-baseline justify-between mb-12 border-b border-outline-variant/20 pb-4">
+<h3 class="font-headline text-2xl">The Gallery</h3>
+<span class="font-label text-[10px] tracking-widest uppercase opacity-60">Vertical Cinema</span>
+</div>
+<div class="masonry-video-container gap-8 space-y-8">
+<!-- Video Item 1 -->
+<div class="break-inside-avoid bg-surface-container shadow-sm group cursor-pointer overflow-hidden">
+<div class="relative aspect-[9/16] bg-primary-fixed">
+<img alt="UGC Video Thumbnail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Lifestyle creator using premium skincare product outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2GUHcVfNHEmkyHdNpDBrHdSv6lPOQGZjXcbPkp2pvGE5lKwKeKw2UaHUuDTU5pfilWmHq3dmDyKerbx0X0sSo14is_bpM2GM6ECtkfvZzldAMBe017C84aU_gardsqP4kaAuxbCGruX7S-fp8yIIzmyDnvIn2NU-s514QV6qSne4c6YmOkRRI76FDg-YxnwtyWCOvFL6UIqokQtSrKmteKfsuYlUnCfmjNPwXvJe0C2tUqL4V6xj-0APJ34xHeog0JD6-2YY9QTk"/>
+<div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="p-6">
+<span class="font-label text-[9px] tracking-widest uppercase text-outline">Lifestyle Partnerships</span>
+<h4 class="font-headline text-lg mt-2">Morning Rituals for Aura</h4>
+</div>
+</div>
+<!-- Video Item 2 -->
+<div class="break-inside-avoid bg-surface-container shadow-sm group cursor-pointer overflow-hidden">
+<div class="relative aspect-[9/16] bg-primary-fixed">
+<img alt="UGC Video Thumbnail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-end makeup application close up detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1iNeyU0awoTX5ZRYxnxxi4XcrOPX_1dI504HIa1GSNGAewOSt5-cDbvzqXzLyuOHsDo-nTPCMmf8WkuplYUMneYKJc3kvIBBHr3hMZZZS7bdJx1n_K_e31HNBB-7rm4SYP39z5edfUy_6CvXC8yM8lhpZikfd__i4j1co04SjSNKzV6f94QnKRD2YFjnewto2E1TA7oAjAmJWzKN4jq7VLLZemD2FOm_qJif0OLRHKnkuQ7CFbEmIl5yTFMAWgOeSbW6IVFfj4f8"/>
+<div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="p-6">
+<span class="font-label text-[9px] tracking-widest uppercase text-outline">Product Demo</span>
+<h4 class="font-headline text-lg mt-2">The Texture of Silk</h4>
+</div>
+</div>
+<!-- Video Item 3 -->
+<div class="break-inside-avoid bg-surface-container shadow-sm group cursor-pointer overflow-hidden">
+<div class="relative aspect-[9/16] bg-primary-fixed">
+<img alt="UGC Video Thumbnail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Aesthetic travel clip of boutique hotel room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUW3O7KwXt5q2LfcaGduRlzAmgviUUx6jIHF5jDwTNX-E9J17QAufU7DmMP8qazxaQo9MXM70Q9taIIgrnkeovFiZlF30n99by30xdVHtHRSfC0yeFDBxs26HSWMzOt54iJ4RkJZZ3WMtQ4VGRN0CypFzHqw_pFejlGbqjB_aBrz8ouczBYa_waaAfRovJBeKQSHcZRvb8GkaqEvOTlA70zYyvDNlwbrMjdPyDGeBPvBTM3_dRZxKfzuPxzu3YKsvZLZsY-HJrw1k"/>
+<div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="p-6">
+<span class="font-label text-[9px] tracking-widest uppercase text-outline">Hospitality and Travel</span>
+<h4 class="font-headline text-lg mt-2">Check-in: The Amalfi Suite</h4>
+</div>
+</div>
+<!-- Video Item 4 -->
+<div class="break-inside-avoid bg-surface-container shadow-sm group cursor-pointer overflow-hidden">
+<div class="relative aspect-[9/16] bg-primary-fixed">
+<img alt="UGC Video Thumbnail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern studio desk setup with luxury coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI5jOSQimICqtUGFkL74ph-6Ut2mpLFzHE0-aDzkpuMY3dF9HeGFHPYFVo2pN3-j1YfPVZvefhPgsP4mD0OxkdFuntyB409iXIF6_8YVYLnd7CHR6NE5iJAg04pLnKWCg8qoTONnPDwWRQBL9C8mG5vgHTsFOpo52nXzkIuXALN92nru7sWbYdZ5N6faphwFXLyUCg4a4gK29fy1QGTi2mRMCaWuCjRPXEsluNOaCQ7SnTNPCCGco_HCTRx-6hnn80pazAyxHjFN0"/>
+<div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="p-6">
+<span class="font-label text-[9px] tracking-widest uppercase text-outline">Creator Portfolio</span>
+<h4 class="font-headline text-lg mt-2">Behind the Lens: MHM Studio</h4>
+</div>
+</div>
+<!-- Video Item 5 -->
+<div class="break-inside-avoid bg-surface-container shadow-sm group cursor-pointer overflow-hidden">
+<div class="relative aspect-[9/16] bg-primary-fixed">
+<img alt="UGC Video Thumbnail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of luxury watch and hands" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf4tuUmS2a6lSzm8tjD0iJbnJ9I1--wFNq7o20t_yZL5baRBVo2wWA0ZUcOcF0DVsy6iKq8TF72zwa9LIDKNGAh6vbLjunOcaHc1R26KseHjdlkrItvKu8rHJqJ8BG7y_NI5cnVwT516beqdfQB8SyXgxJbDWAzp9POjSHixugUaxb8mHGFSyolh7QOxnsBbx0CwrkeMNcXfUowAfNWnDvObtJHTt153VyeelLvzsEpj02PIB58vFwDXFQi6HhhzTI5WL17ggEMJo"/>
+<div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="p-6">
+<span class="font-label text-[9px] tracking-widest uppercase text-outline">Product Demos</span>
+<h4 class="font-headline text-lg mt-2">Precision and Movement</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Conversion Footer Area -->
+<section class="bg-primary-container/30 py-32 px-6 md:px-12 text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl mb-8">Ready to curate your brand narrative?</h2>
+<p class="font-body text-xl text-on-surface-variant mb-12">
+                    Let's discuss how our UGC studio can elevate your presence with intentional, high-fidelity content.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto bg-primary text-on-primary px-12 py-4 font-label text-xs tracking-[0.2em] uppercase">Start a Project</button>
+<button class="w-full sm:w-auto border border-primary text-primary px-12 py-4 font-label text-xs tracking-[0.2em] uppercase">View Full Deck</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface py-16 px-6 md:px-12 border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+<div class="max-w-md">
+<p class="font-headline text-xl mb-4">Milk House Media Co</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                    © 2024 Milk House Media Co. All rights reserved. Boutique creator marketing consultancy.
+                </p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4">
+<a class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant hover:text-primary" href="#">Privacy Policy</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant hover:text-primary" href="#">Terms of Service</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant hover:text-primary" href="#">LinkedIn</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant hover:text-primary" href="#">Instagram</a>
+<a class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant hover:text-primary" href="#">Threads</a>
+</div>
+</div>
+</footer>
+</body></html>

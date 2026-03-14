@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#4e453a",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "secondary": "#5f5e5e",
+              "surface": "#fbf9f7",
+              "primary-container": "#e3d5c5",
+              "inverse-on-surface": "#f2f0ee",
+              "on-surface": "#1b1c1b",
+              "outline": "#7d766d",
+              "secondary-container": "#e2dfde",
+              "on-primary-container": "#665c4f",
+              "on-primary-fixed": "#211a11",
+              "on-background": "#1b1c1b",
+              "on-secondary-container": "#636262",
+              "on-surface-variant": "#4c463e",
+              "on-secondary-fixed-variant": "#474746",
+              "tertiary-fixed": "#e0e2eb",
+              "primary-fixed": "#efe0d0",
+              "surface-dim": "#dbdad8",
+              "outline-variant": "#cfc5bb",
+              "background": "#fbf9f7",
+              "on-tertiary-container": "#5a5d65",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#44474e",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f5f3f1",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#e5e2e1",
+              "surface-variant": "#e4e2e0",
+              "tertiary-container": "#d5d7e0",
+              "primary-fixed-dim": "#d2c4b5",
+              "primary": "#675d50",
+              "inverse-surface": "#30302f",
+              "tertiary": "#5b5e66",
+              "on-secondary-fixed": "#1c1b1b",
+              "surface-container-highest": "#e4e2e0",
+              "secondary-fixed-dim": "#c8c6c5",
+              "inverse-primary": "#d2c4b5",
+              "surface-container": "#efedec",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#eae8e6",
+              "surface-tint": "#675d50",
+              "tertiary-fixed-dim": "#c4c6cf",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#fbf9f7",
+              "on-tertiary-fixed": "#181c22"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Newsreader", "serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-underline {
+            text-decoration: none;
+            border-bottom: 1px solid #675d50;
+            padding-bottom: 3px;
+        }
+        body {
+            background-color: #fbf9f7;
+            color: #1b1c1b;
+        }
+        .glass-nav {
+            background: rgba(251, 249, 247, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<nav class="glass-nav sticky top-0 z-50 border-b border-outline-variant/10 px-8 py-6">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<div class="flex items-center gap-4">
+<span class="font-headline text-xl font-semibold tracking-tight">Milk House Media Co</span>
+</div>
+<div class="hidden md:flex gap-10">
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Index.html">Home</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="about.html">About/Work</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Creator.html">Creator Network</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<a class="bg-primary text-on-primary px-8 py-3 font-label text-[0.6875rem] uppercase tracking-widest hover:opacity-90 transition-opacity" href="contact.html">
+                Tell us what you are building
+            </a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="pt-32 pb-24 px-8 border-b border-outline-variant/15">
+<div class="max-w-[1440px] mx-auto flex flex-col items-start">
+<span class="font-label text-[0.75rem] uppercase tracking-[0.2em] text-outline mb-6">Bespoke Solutions</span>
+<h1 class="font-headline text-[3.5rem] md:text-[5rem] leading-[1.1] tracking-[-0.03em] max-w-4xl text-on-surface italic">
+                    Strategic influence for the <span class="not-italic">discerning brand.</span>
+</h1>
+<div class="mt-12 ml-auto max-w-lg">
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                        We don't just find talent; we architect ecosystem strategies that transform attention into enduring cultural authority.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Services Grid - Asymmetrical Layout -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-24">
+<!-- 01 Creator Activation Strategy -->
+<div class="md:col-span-7 pr-0 md:pr-12">
+<div class="aspect-[16/9] bg-primary-fixed mb-12 overflow-hidden">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-80" data-alt="Minimalist architectural office space with clean lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt5-DvhwEkyNG-jOCYfCNnkSxoFWviSZf7atcxxat_rIL1N1NNEBqgUxy8dWCEaFFf6zMdQ_mrv1Zbi4s4oAnntYnbcnVLqVSlkMgPaqzC7NCD34JqITcWCP8Y06KVw2m8XHzckiQ1JBIYZrpqW-ZRfbuVyIET9Vb__QM46_702x6T_Q05HU0HhAwXlfzV13yN08rzNO3O9CcsRQeb9FfZTWlb_1-8VVrIJgVRGml6nbGnUFwwYaBK6uQHZq57cm3r7WJce6Ayhfg"/>
+</div>
+<span class="font-label text-[0.6875rem] uppercase tracking-[0.2em] text-primary mb-4 block">01 / Strategy</span>
+<h2 class="font-headline text-4xl mb-6">Creator Activation Strategy</h2>
+<p class="text-lg leading-relaxed text-on-surface-variant max-w-xl mb-8">
+                        We believe in plans before talent. We map your brand's unique narrative against the creator landscape to build a roadmap that ensures every partnership serves a measurable business objective.
+                    </p>
+<ul class="space-y-3 font-label text-[0.75rem] uppercase tracking-widest text-outline">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Market Archetype Analysis</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Creative Brief Architecture</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Long-term Ecosystem Mapping</li>
+</ul>
+</div>
+<!-- 02 Influencer Partnerships -->
+<div class="md:col-span-4 md:col-start-9 flex flex-col justify-center">
+<span class="font-label text-[0.6875rem] uppercase tracking-[0.2em] text-primary mb-4 block">02 / Curation</span>
+<h2 class="font-headline text-4xl mb-6 italic">Influencer Partnerships &amp; Sourcing</h2>
+<p class="text-lg leading-relaxed text-on-surface-variant mb-8">
+                        Finding the right creators is an art. Our process is clean, rigorous, and focused on genuine alignment over vanity metrics. We handle the friction so you can focus on the vision.
+                    </p>
+<div class="p-8 bg-surface-container-lowest border border-outline-variant/15">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<p class="font-body text-base italic">"The right creator doesn't just promote a product; they validate a lifestyle."</p>
+</div>
+</div>
+<!-- 03 Event Amplification -->
+<div class="md:col-span-5 flex flex-col justify-center order-2 md:order-1">
+<span class="font-label text-[0.6875rem] uppercase tracking-[0.2em] text-primary mb-4 block">03 / Moments</span>
+<h2 class="font-headline text-4xl mb-6">Event Amplification</h2>
+<p class="text-lg leading-relaxed text-on-surface-variant mb-8">
+                        From high-end launches to intimate brand moments, we ensure your physical events have a digital legacy. We curate the guest list that drives the conversation.
+                    </p>
+<div class="flex gap-4">
+<div class="h-40 w-1/2 bg-surface-container-high" data-alt="Boutique event setting thumbnail">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="Luxury table setting at a brand event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnYO5k3EENiIPeg20UudIv4zUgXaWycCQb6iTK8h7xkY0FJFh6KfsefcgeijBtOtYapS07D4syKLB5pTGLV6DYmWwxCk_3pzJg2tblzOFwIRjLhjsMvpBYtlq9pFHG8DdrPWl7bwp89eljj9F6LJ3iZUjc30L-eZcW8q83GLk0FvN_EruwWO9yY_xha9cjNHLjhkpwXggL_jdobCDTWeQBzIqa5TR6SNryX-huZ6jzTYZt4-ce7fXhcmXIAGA2IMdm3TfTW0L5yVI"/>
+</div>
+<div class="h-40 w-1/2 bg-surface-container-high" data-alt="Event atmosphere thumbnail">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="Elegant lighting at a curated launch event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk6gjMwsqcTZHGmK8M-5e2tH2LCXCMIiffT5jMiaiQKOd6YdckX4TOTrGhH_KG3GdQjXstXC6ROpEm3kdMECFsCsE4ZAgiWciDiziM4jIOJJMfUPDNizwRg5LthDxLbmFAp2yQ-10LP7hWbpkfFteBk9QUXPnaLJIxHTm2ergI68Af55APL3LMlwcqHxX2OTQox6B4O_4TGgz2FuumCGoM-W8eAmHjA6LLnUtEClrBOUY8wRk_0MhFoIK3EFd6OYN8AUBRfdcD5IU"/>
+</div>
+</div>
+</div>
+<!-- 04 UGC Systems -->
+<div class="md:col-span-6 md:col-start-7 order-1 md:order-2">
+<div class="aspect-square bg-surface-container-highest mb-12 relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-90" data-alt="Modern studio setup with camera and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqfQSvuP1lf99yebUY98bY501sorVTmpZdF9tsVIGNy-bAFNEHZoYHjIRIy8obD4mGo5Bxn1G-o78SDGMJYGZQy9xJ3kIXHvfrHQRYU1PcbLzFHO5NxO1d5uhMA_XqR2GDnuHJo3eeH6FBpFEfSAOdKfGOLp28HNxX7-gifQ5encb5-AuKK2lob1-qL8dAbs0CeXZW2xEBT9E342LQGELcjIyHsWAY5e2X1NOoRJkymh0NdZ9ICI4URLn_B5u1971JUIM7wVhxTnI"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<span class="font-label text-[0.6875rem] uppercase tracking-[0.2em] text-primary mb-4 block">04 / Content</span>
+<h2 class="font-headline text-4xl mb-6 italic">UGC Systems &amp; Production</h2>
+<p class="text-lg leading-relaxed text-on-surface-variant max-w-xl">
+                        Consistent, high-quality content is a machine, not a miracle. We build the systems that deliver organic and paid assets on a recurring schedule, tailored for your brand's aesthetic.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Pull Quote -->
+<section class="py-32 bg-surface">
+<div class="max-w-4xl mx-auto text-center px-8">
+<h3 class="font-headline text-[2.75rem] leading-tight italic text-primary">
+                    "We reject the frantic. We embrace the intentional. Your brand deserves a narrative that resonates beyond the scroll."
+                </h3>
+<div class="mt-8 flex justify-center items-center gap-4">
+<div class="h-px w-12 bg-outline-variant"></div>
+<span class="font-label text-[0.6875rem] uppercase tracking-widest text-outline">Philosophy</span>
+<div class="h-px w-12 bg-outline-variant"></div>
+</div>
+</div>
+</section>
+<!-- Optional Add-ons - Tonal Layering -->
+<section class="py-24 px-8 bg-surface-container-highest">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<span class="font-label text-[0.75rem] uppercase tracking-[0.2em] text-outline mb-4 block">Extended Support</span>
+<h2 class="font-headline text-5xl">Strategic Add-ons</h2>
+</div>
+<p class="text-on-surface-variant max-w-md italic text-lg">
+                        Complementing our core services with specialized tactical oversight.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-outline-variant/20 border border-outline-variant/20">
+<!-- Add-on 01 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="payments">payments</span>
+<h4 class="font-headline text-2xl mb-4">Paid Usage Guidance</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Expert negotiation for content licensing and whitelisting rights across all platforms.</p>
+</div>
+<!-- Add-on 02 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="verified_user">verified_user</span>
+<h4 class="font-headline text-2xl mb-4">Whitelisting Support</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Full management of creator-side ad permissions to scale authentic content through paid media.</p>
+</div>
+<!-- Add-on 03 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="folder_managed">folder_managed</span>
+<h4 class="font-headline text-2xl mb-4">Library Organization</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Asset management and digital archiving to ensure your content is accessible and evergreen.</p>
+</div>
+<!-- Add-on 04 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="monitoring">monitoring</span>
+<h4 class="font-headline text-2xl mb-4">Reporting Dashboards</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Custom, data-driven visualizations of campaign performance and audience sentiment.</p>
+</div>
+<!-- Add-on 05 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-colors md:col-span-2">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div>
+<span class="material-symbols-outlined text-primary mb-6" data-icon="handshake">handshake</span>
+<h4 class="font-headline text-2xl mb-4 italic">Brand Partnership Strategies</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Advising on co-branding and multi-party activations for maximum cultural impact.</p>
+</div>
+<div class="mt-auto">
+<a class="editorial-underline font-label text-[0.75rem] uppercase tracking-widest text-primary hover:text-on-surface transition-colors inline-block" href="#">Request a custom deck</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8">
+<div class="max-w-[1440px] mx-auto bg-primary-container p-20 flex flex-col items-center text-center">
+<h2 class="font-headline text-[3rem] md:text-[4rem] text-on-primary-container leading-none mb-10 max-w-2xl">
+                    Ready to elevate your <span class="italic">cultural footprint?</span>
+</h2>
+<button class="bg-primary text-on-primary px-16 py-5 font-label text-[0.875rem] uppercase tracking-[0.2em] hover:scale-105 transition-transform">
+                    Inquire for 2024
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t border-outline-variant/15 py-24 px-8">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24">
+<div class="md:col-span-6">
+<span class="font-headline text-2xl text-on-surface block mb-6">Milk House Media Co</span>
+<p class="font-body text-lg text-on-surface-variant max-w-xs italic">
+                        © 2024 Milk House Media Co. All rights reserved. Boutique creator marketing consultancy.
+                    </p>
+</div>
+<div class="md:col-span-3">
+<span class="font-label text-[0.6875rem] uppercase tracking-widest text-outline mb-6 block">Legal</span>
+<ul class="space-y-4">
+<li><a class="font-label text-[0.75rem] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-label text-[0.75rem] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<span class="font-label text-[0.6875rem] uppercase tracking-widest text-outline mb-6 block">Social</span>
+<ul class="space-y-4">
+<li><a class="font-label text-[0.75rem] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a></li>
+<li><a class="font-label text-[0.75rem] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="font-label text-[0.75rem] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Threads</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label text-[0.625rem] text-outline uppercase tracking-widest">Architected for clarity</span>
+<span class="font-label text-[0.625rem] text-outline uppercase tracking-widest">Updated Q3 2024</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#4e453a",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "secondary": "#5f5e5e",
+                        "surface": "#fbf9f7",
+                        "primary-container": "#e3d5c5",
+                        "inverse-on-surface": "#f2f0ee",
+                        "on-surface": "#1b1c1b",
+                        "outline": "#7d766d",
+                        "secondary-container": "#e2dfde",
+                        "on-primary-container": "#665c4f",
+                        "on-primary-fixed": "#211a11",
+                        "on-background": "#1b1c1b",
+                        "on-secondary-container": "#636262",
+                        "on-surface-variant": "#4c463e",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-fixed": "#e0e2eb",
+                        "primary-fixed": "#efe0d0",
+                        "surface-dim": "#dbdad8",
+                        "outline-variant": "#cfc5bb",
+                        "background": "#fbf9f7",
+                        "on-tertiary-container": "#5a5d65",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#44474e",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f5f3f1",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface-variant": "#e4e2e0",
+                        "tertiary-container": "#d5d7e0",
+                        "primary-fixed-dim": "#d2c4b5",
+                        "primary": "#675d50",
+                        "inverse-surface": "#30302f",
+                        "tertiary": "#5b5e66",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-container-highest": "#e4e2e0",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "inverse-primary": "#d2c4b5",
+                        "surface-container": "#efedec",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#eae8e6",
+                        "surface-tint": "#675d50",
+                        "tertiary-fixed-dim": "#c4c6cf",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f7",
+                        "on-tertiary-fixed": "#181c22"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Newsreader", "serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(103, 93, 80, 0.06);
+        }
+        .glass-nav {
+            background: rgba(251, 249, 247, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<nav class="glass-nav sticky top-0 z-50 border-b border-outline-variant/10 px-8 py-6">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<div class="flex items-center gap-4">
+<span class="font-headline text-xl font-semibold tracking-tight">Milk House Media Co</span>
+</div>
+<div class="hidden md:flex gap-10">
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Index.html">Home</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="about.html">About/Work</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Creator.html">Creator Network</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<a class="bg-primary text-on-primary px-8 py-3 font-label text-[0.6875rem] uppercase tracking-widest hover:opacity-90 transition-opacity" href="contact.html">
+                Tell us what you are building
+            </a>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="flex flex-col md:flex-row items-start gap-12">
+<div class="md:w-3/5">
+<h1 class="font-headline text-6xl md:text-7xl leading-[1.1] text-on-surface tracking-tighter mb-8">
+                        A curated community for the <span class="italic text-primary">intentional</span> storyteller.
+                    </h1>
+<p class="font-body text-xl leading-relaxed text-on-surface-variant max-w-2xl">
+                        The Creator Network is an exclusive roster of visionary talent. We don't just find influencers; we foster partnerships between brands and artisans who prioritize craft over clout.
+                    </p>
+</div>
+<div class="md:w-2/5 pt-12">
+<div class="aspect-[4/5] bg-primary-fixed relative overflow-hidden group">
+<img alt="Creative professional at work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional photographer adjusting a vintage camera lens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAu_cWw1sm9LhgYSVkG2j3DUZEyxmKiah9KDYisajSNDPo_MXd-0MW6Jsz2l6zO0WUIYUd9iyUtBvqs4eyIUkvTveZpeHlPSTzwMjo9zdJdrWNUYOoZHCJqvNu_-_2smXVDIONj_UfqU81jXA1GW0sZEvrfYm88ZM7LizOS6BaWzagMq8ufkNGS-OxPPWrGwHg1_5m53KrmTsr_zxI1v1T7M6QLb88lOxY5JFqMZYRzaN49dgpWclRBNVzDYsdiKbg173kp0E-xkw"/>
+<div class="absolute inset-0 border-[20px] border-surface/10 pointer-events-none"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery / Ethos Section -->
+<section class="bg-surface-container-low py-24 mb-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-4 order-2 md:order-1">
+<div class="bg-surface-container-lowest p-12 editorial-shadow border border-outline-variant/10">
+<h3 class="font-headline text-3xl mb-6">Our Philosophy</h3>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant mb-8">
+                                We believe in the power of the "Quiet Luxury" aesthetic—where the content speaks for itself. No noise, no gimmicks, just pure creative alignment.
+                            </p>
+<ul class="space-y-4 font-label text-[11px] uppercase tracking-[0.1em] text-primary">
+<li class="flex items-center gap-3">
+<span class="w-4 h-[1px] bg-primary"></span> High-End Visual Narrative
+                                </li>
+<li class="flex items-center gap-3">
+<span class="w-4 h-[1px] bg-primary"></span> Artisanal Brand Partnerships
+                                </li>
+<li class="flex items-center gap-3">
+<span class="w-4 h-[1px] bg-primary"></span> Long-form Storytelling
+                                </li>
+</ul>
+</div>
+</div>
+<div class="md:col-span-8 order-1 md:order-2">
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square bg-primary-container relative">
+<img alt="Minimal desk setup" class="w-full h-full object-cover" data-alt="Minimalist wooden desk with a single notebook and coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUvij2J0OZ1SEz2O5W8LRu2gkZMoTYaU5cXAaeJIUcTL6AUkij7C9QVEnbE3FrRB2MT80ye9QWcKPP-Xhw0rVWo2-_iV4zLK7mlF4kyRIdlplKGkKJ0qyK9MervqtJ6RtCuOFlb5skGbht6QAAlx-AwC7-RRuhz9ttbVidWnPiSAKbL1HgktMQ6Ts60mYKrL-7CDGnm0gJsyVtEVvwXsbVtXsnMVQ5NKkEagxz6sQn7m0px2OUkNuZVuej-CK0Fwdfx3W6XkAC6QM"/>
+</div>
+<div class="aspect-square bg-secondary-container mt-12 relative">
+<img alt="Architecture details" class="w-full h-full object-cover" data-alt="Abstract architectural shadows on a warm stone wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk7rrAQkp8ZmQWg0-RRbBi-SS7k0eppnOOvnw_Y8jmsjA1iDe6fycD3OsWTtCl-eDNSvUVbB--wkG3poe_cA-vsgJhS_GTqK6-HJmOQb2V3GMPDTjOkRPZgAmpB5SC03ggJ8MztHJbwCZ_feCsp0Mo07fVuQtAgVEd-Qp14FmkWW0JFGkFRlFEdFT23UBoErW00xgxOPv7FEdnpZFn_dj1nrxmBGADi5H2dnS1J7-L5DdeX28zfliBHWEF7pJyNq2hFc7py2zXyDw"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Intake Form Section -->
+<section class="max-w-4xl mx-auto px-6 py-12">
+<div class="text-center mb-16">
+<span class="font-label text-[11px] uppercase tracking-[0.3em] text-outline mb-4 block">Apply to the Network</span>
+<h2 class="font-headline text-5xl tracking-tight">Begin the Conversation</h2>
+</div>
+<form action="#" class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+<div class="relative group">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 font-body text-lg transition-colors placeholder:text-outline-variant/50" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="relative group">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 font-body text-lg transition-colors placeholder:text-outline-variant/50" placeholder="hello@creator.com" type="email"/>
+</div>
+<div class="relative group">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block">Primary Platform / Portfolio</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 font-body text-lg transition-colors placeholder:text-outline-variant/50" placeholder="instagram.com/handle" type="url"/>
+</div>
+<div class="relative group">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block">Creative Niche</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 font-body text-lg transition-colors appearance-none">
+<option>Editorial Photography</option>
+<option>Cinematography</option>
+<option>Interior Styling</option>
+<option>Lifestyle Storytelling</option>
+</select>
+</div>
+</div>
+<div class="relative group">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block">Tell us about your creative vision</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 font-body text-lg transition-colors placeholder:text-outline-variant/50 resize-none" placeholder="What drives your work?" rows="4"></textarea>
+</div>
+<div class="flex justify-center pt-8">
+<button class="group relative inline-flex items-center gap-4 bg-primary text-on-primary px-12 py-5 font-label text-[11px] uppercase tracking-[0.2em] overflow-hidden" type="submit">
+<span class="relative z-10">Submit Application</span>
+<span class="material-symbols-outlined relative z-10 text-sm">arrow_forward</span>
+<div class="absolute inset-0 bg-on-primary-fixed-variant translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+</button>
+</div>
+</form>
+</section>
+<!-- Pull Quote -->
+<section class="max-w-5xl mx-auto px-6 my-32">
+<div class="border-y border-outline-variant/20 py-16 text-center">
+<blockquote class="font-headline text-4xl italic text-on-surface-variant leading-relaxed">
+                    "Creation is not a race to be seen, but a deliberate act of being understood."
+                </blockquote>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant/20 py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
+<div class="max-w-xs">
+<span class="font-headline text-2xl text-primary mb-6 block">Milk House Media Co</span>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        A boutique creator marketing consultancy defining the next era of digital refinement.
+                    </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Legal</span>
+<a class="font-body text-sm hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body text-sm hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Social</span>
+<a class="font-body text-sm hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-body text-sm hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-body text-sm hover:text-primary transition-colors" href="#">Threads</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-outline-variant/10">
+<p class="font-label text-[10px] uppercase tracking-widest text-outline">© 2024 Milk House Media Co. All rights reserved. Boutique creator marketing consultancy.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<span class="material-symbols-outlined text-outline text-lg" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-outline text-lg" data-icon="favorite" data-weight="fill">favorite</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

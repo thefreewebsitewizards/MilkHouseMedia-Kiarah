@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#4e453a",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "secondary": "#5f5e5e",
+              "surface": "#fbf9f7",
+              "primary-container": "#e3d5c5",
+              "inverse-on-surface": "#f2f0ee",
+              "on-surface": "#1b1c1b",
+              "outline": "#7d766d",
+              "secondary-container": "#e2dfde",
+              "on-primary-container": "#665c4f",
+              "on-primary-fixed": "#211a11",
+              "on-background": "#1b1c1b",
+              "on-secondary-container": "#636262",
+              "on-surface-variant": "#4c463e",
+              "on-secondary-fixed-variant": "#474746",
+              "tertiary-fixed": "#e0e2eb",
+              "primary-fixed": "#efe0d0",
+              "surface-dim": "#dbdad8",
+              "outline-variant": "#cfc5bb",
+              "background": "#fbf9f7",
+              "on-tertiary-container": "#5a5d65",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#44474e",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f5f3f1",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#e5e2e1",
+              "surface-variant": "#e4e2e0",
+              "tertiary-container": "#d5d7e0",
+              "primary-fixed-dim": "#d2c4b5",
+              "primary": "#675d50",
+              "inverse-surface": "#30302f",
+              "tertiary": "#5b5e66",
+              "on-secondary-fixed": "#1c1b1b",
+              "surface-container-highest": "#e4e2e0",
+              "secondary-fixed-dim": "#c8c6c5",
+              "inverse-primary": "#d2c4b5",
+              "surface-container": "#efedec",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#eae8e6",
+              "surface-tint": "#675d50",
+              "tertiary-fixed-dim": "#c4c6cf",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#fbf9f7",
+              "on-tertiary-fixed": "#181c22"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Newsreader"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f7;
+            font-family: 'Newsreader', serif;
+        }
+        .editorial-underline {
+            text-decoration: none;
+            border-bottom: 1px solid #675d50;
+            padding-bottom: 3px;
+        }
+        .glass-nav {
+            background: rgba(251, 249, 247, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="text-on-surface selection:bg-primary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<nav class="glass-nav sticky top-0 z-50 border-b border-outline-variant/10 px-8 py-6">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<div class="flex items-center gap-4">
+<span class="font-headline text-xl font-semibold tracking-tight">Milk House Media Co</span>
+</div>
+<div class="hidden md:flex gap-10">
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Index.html">Home</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="about.html">About/Work</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Creator.html">Creator Network</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<a class="bg-primary text-on-primary px-8 py-3 font-label text-[0.6875rem] uppercase tracking-widest hover:opacity-90 transition-opacity" href="contact.html">
+                Tell us what you are building
+            </a>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section: The Bio -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="grid grid-cols-12 gap-12 items-start">
+<div class="col-span-12 lg:col-span-7">
+<span class="font-label text-[11px] uppercase tracking-[0.2em] text-outline mb-6 block">Our Founder &amp; Vision</span>
+<h1 class="font-headline text-[3.5rem] leading-[1.1] text-on-surface mb-10 tracking-tight">
+                        A <span class="italic">Swiss-army-knife</span> of creator activation, bridging global culture with strategy.
+                    </h1>
+<div class="space-y-8 text-lg leading-relaxed text-on-surface-variant max-w-2xl">
+<p>
+                            Milk House Media Co was born from the intersection of corporate precision and startup agility. Founded by a Brazilian visionary with multicultural fluency, we translate the language of global trends into actionable creator strategies.
+                        </p>
+<p>
+                            Having led activation teams across high-growth startups and heritage corporate environments, our founder brings a rare perspective: an intuitive understanding of the <span class="italic text-primary">"creator soul"</span> grounded in the rigorous demands of brand equity and bottom-line growth.
+                        </p>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 pt-12 lg:pt-0">
+<div class="aspect-[4/5] bg-surface-container-low relative overflow-hidden">
+<img alt="Founder Portrait" class="w-full h-full object-cover grayscale brightness-95 contrast-105" data-alt="Professional portrait of a creative leader in an editorial setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyBHb7RxoDGq-IWCsJdl4MY817lDYayPi4vyDxV1uN7AcxdeYD-j4EBVtlpWdse64k1IgX9MUo3MCNl8EACxFfarptDNiOnNFk9v6exQ1qU9mLYPm6BL9ZZi3vtmztK6Q1xD8dSdPPG1NAR5h4xCV8zt55TWzRlwx8Vgh48hk_S8-gDdIq0NDXUkeNyEA44cHyAsEzhiL-C5tmNS_Gf7hP9btZ-NDW6w5_xD8TSm0pDGTerA_CGCFB-N3QyUKT_BNfh2TKPezGAJI"/>
+<div class="absolute bottom-0 right-0 p-8 bg-surface-container-lowest">
+<span class="font-label text-[10px] uppercase tracking-widest text-outline">Based Globally. Rooted in Brazil.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Pull-Quote -->
+<section class="bg-primary-container/30 py-24 my-32">
+<div class="max-w-4xl mx-auto px-8 text-center">
+<blockquote class="font-headline text-3xl md:text-4xl italic text-primary leading-tight">
+                    "We reject the template. We embrace the intentional. In a cluttered digital world, clarity is the ultimate luxury."
+                </blockquote>
+</div>
+</section>
+<!-- Work Section: Logo Cloud -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+<div class="max-w-xl">
+<span class="font-label text-[11px] uppercase tracking-[0.2em] text-outline mb-4 block">Past Collaborations</span>
+<h2 class="font-headline text-4xl text-on-surface">Trusted by visionaries, from boutique disruptors to heritage giants.</h2>
+</div>
+<div class="text-right">
+<span class="font-label text-xs italic text-outline">Selected Clients 2020 — 2024</span>
+</div>
+</div>
+<!-- Logo Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-outline-variant/20">
+<div class="bg-surface p-12 flex items-center justify-center grayscale opacity-60 hover:opacity-100 transition-opacity">
+<span class="font-headline text-2xl tracking-tighter">AETHER</span>
+</div>
+<div class="bg-surface p-12 flex items-center justify-center grayscale opacity-60 hover:opacity-100 transition-opacity">
+<span class="font-headline text-2xl tracking-tighter">NORDIC</span>
+</div>
+<div class="bg-surface p-12 flex items-center justify-center grayscale opacity-60 hover:opacity-100 transition-opacity">
+<span class="font-headline text-2xl tracking-tighter">LUMINA</span>
+</div>
+<div class="bg-surface p-12 flex items-center justify-center grayscale opacity-60 hover:opacity-100 transition-opacity">
+<span class="font-headline text-2xl tracking-tighter">KINETIC</span>
+</div>
+<div class="bg-surface p-12 flex items-center justify-center grayscale opacity-60 hover:opacity-100 transition-opacity">
+<span class="font-headline text-2xl tracking-tighter">VERVE</span>
+</div>
+<div class="bg-surface p-12 flex items-center justify-center grayscale opacity-60 hover:opacity-100 transition-opacity">
+<span class="font-headline text-2xl tracking-tighter">MODAL</span>
+</div>
+<div class="bg-surface p-12 flex items-center justify-center grayscale opacity-60 hover:opacity-100 transition-opacity">
+<span class="font-headline text-2xl tracking-tighter">ELEVATE</span>
+</div>
+<div class="bg-surface p-12 flex items-center justify-center grayscale opacity-60 hover:opacity-100 transition-opacity">
+<span class="font-headline text-2xl tracking-tighter">ORBIT</span>
+</div>
+</div>
+</section>
+<!-- Work Portfolio: Case Studies -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<span class="font-label text-[11px] uppercase tracking-[0.2em] text-outline mb-4 block">The Portfolio</span>
+<h2 class="font-headline text-5xl text-on-surface mb-4">Strategic Artifacts</h2>
+</div>
+<!-- Case Study 01 -->
+<div class="grid grid-cols-12 gap-12 mb-32 items-center">
+<div class="col-span-12 lg:col-span-6 order-2 lg:order-1">
+<div class="flex items-center gap-4 mb-6">
+<span class="font-label text-[10px] tracking-widest text-primary uppercase">01 / Luxury Fashion</span>
+<div class="h-px w-12 bg-outline-variant"></div>
+<span class="font-label text-[10px] tracking-widest text-outline uppercase">2023 Campaign</span>
+</div>
+<h3 class="font-headline text-4xl mb-6">The Re-Evolution of Lumina</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-md">
+                        A full-scale creator strategy that pivoted a heritage brand towards Gen-Z influence without losing its artisanal soul.
+                    </p>
+<div class="grid grid-cols-2 gap-8 mb-10 p-8 bg-surface-container-low">
+<div>
+<span class="font-label text-[10px] uppercase text-outline block mb-2">Strategy</span>
+<span class="font-body text-sm italic">Hyper-local storytelling</span>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase text-outline block mb-2">Outcome</span>
+<span class="font-body text-sm italic">40% Growth in Direct Reach</span>
+</div>
+</div>
+<a class="font-label text-[11px] uppercase tracking-[0.15em] editorial-underline group inline-flex items-center gap-2" href="#">
+                        View Detailed Narrative
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="col-span-12 lg:col-span-6 order-1 lg:order-2">
+<div class="aspect-video bg-surface-container overflow-hidden">
+<img alt="Luxury Case Study" class="w-full h-full object-cover" data-alt="Editorial fashion photography featuring high-end minimalist aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN4vMWeoQBBdPdbaoIKdjFBcj0c_S33Z6niQ-vs-h9KnQLZIf7Z6Jf3ruecg8KnvSeptVwV1BrJgJ18mQW9nSIdDn13GFMJ6JQG-p5WZ8ncgut-qRHo5PX7kMgyCy1_EHjntBs2gQCSKJoFYH962l4wolmt4kTKVXtLb3DMvH1xdpgjfiBkEZESivFTjDKqOkmKKfeOmIYNUx8jLGfeVIQVT23uOY3b2zi-ePyC0QcRv2HagiOwzT3YpPmmuq2DdhLcUH8ZcWX328"/>
+</div>
+</div>
+</div>
+<!-- Case Study 02 -->
+<div class="grid grid-cols-12 gap-12 mb-32 items-center">
+<div class="col-span-12 lg:col-span-6">
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img alt="Startup Case Study" class="w-full h-full object-cover" data-alt="Modern workspace with tech-driven creator tools and minimalist decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp1Y0J1psi8ydZ0hHCZFoXMGF0aE8pOXMatczn2pKn9Zh0uBUxATd4MTmMFWpmcMAzYzHDUOYJeKtrhPPtGOeP4oowiFzCdERgEDrA76-jIR6JiCJ-qdMKxEysNd1MDnLjpuv5dOWIa4BZ0dkKoUTlpwPt2Bo6HJrSJC2Tj1ZRx2GquSm2oJ_va3ra5UScLo9ht-xMj_yztwefk8j6zGuyu9K5SaYapbKOP2zdSBn2Zr15c7TLSHxsrKj0_l6BJivQU8wclMuqb1M"/>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-6 lg:pl-12">
+<div class="flex items-center gap-4 mb-6">
+<span class="font-label text-[10px] tracking-widest text-primary uppercase">02 / Tech Startup</span>
+<div class="h-px w-12 bg-outline-variant"></div>
+<span class="font-label text-[10px] tracking-widest text-outline uppercase">Launch Phase</span>
+</div>
+<h3 class="font-headline text-4xl mb-6">KINETIC: From Beta to Beloved</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-md">
+                        Transforming a technical SaaS product into a lifestyle brand for creators through intentional community-led activation.
+                    </p>
+<div class="grid grid-cols-2 gap-8 mb-10 p-8 bg-surface-container-low">
+<div>
+<span class="font-label text-[10px] uppercase text-outline block mb-2">Execution</span>
+<span class="font-body text-sm italic">Creator-led Beta Circles</span>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase text-outline block mb-2">Outcome</span>
+<span class="font-body text-sm italic">12k Waitlist Sign-ups</span>
+</div>
+</div>
+<a class="font-label text-[11px] uppercase tracking-[0.15em] editorial-underline group inline-flex items-center gap-2" href="#">
+                        View Detailed Narrative
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Repeated Case Study Template (Suppressed/Hidden Style as requested) -->
+<div class="border-t border-outline-variant/30 pt-16 mt-24">
+<div class="max-w-3xl">
+<span class="font-label text-[10px] uppercase tracking-widest text-outline mb-12 block">Additional Archives</span>
+<div class="space-y-12">
+<!-- Item -->
+<div class="group cursor-pointer py-4 border-b border-outline-variant/10 flex items-center justify-between">
+<div>
+<span class="font-label text-[9px] uppercase tracking-widest text-primary block mb-1">Fintech / 6 Months</span>
+<h4 class="font-headline text-2xl text-on-surface-variant group-hover:text-primary transition-colors">Trust-Building in Decentralized Spaces</h4>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">add</span>
+</div>
+<!-- Item -->
+<div class="group cursor-pointer py-4 border-b border-outline-variant/10 flex items-center justify-between">
+<div>
+<span class="font-label text-[9px] uppercase tracking-widest text-primary block mb-1">Hospitality / Quarterly</span>
+<h4 class="font-headline text-2xl text-on-surface-variant group-hover:text-primary transition-colors">The Curated Stay: Influencer Residencies</h4>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">add</span>
+</div>
+<!-- Item -->
+<div class="group cursor-pointer py-4 border-b border-outline-variant/10 flex items-center justify-between">
+<div>
+<span class="font-label text-[9px] uppercase tracking-widest text-primary block mb-1">CPG / Launch</span>
+<h4 class="font-headline text-2xl text-on-surface-variant group-hover:text-primary transition-colors">Oatmeal &amp; Sand: Aesthetic Packaging Launch</h4>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">add</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low pt-24 pb-12">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+<div class="lg:col-span-2">
+<span class="font-headline text-2xl text-primary block mb-6">Milk House Media Co</span>
+<p class="font-body text-on-surface-variant max-w-sm leading-relaxed">
+                        A boutique creator marketing consultancy specializing in high-fidelity activations for brands with global taste.
+                    </p>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase tracking-widest text-outline block mb-6">Navigation</span>
+<ul class="space-y-4">
+<li><a class="font-body text-sm hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body text-sm hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase tracking-widest text-outline block mb-6">Connect</span>
+<ul class="space-y-4">
+<li><a class="font-body text-sm hover:text-primary transition-colors" href="#">LinkedIn</a></li>
+<li><a class="font-body text-sm hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="font-body text-sm hover:text-primary transition-colors" href="#">Threads</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between gap-6">
+<span class="font-label text-[10px] text-outline">© 2024 Milk House Media Co. All rights reserved. Boutique creator marketing consultancy.</span>
+<span class="font-label text-[10px] text-outline italic">Crafted for the Digital Curator.</span>
+</div>
+</div>
+</footer>
+</body></html>
