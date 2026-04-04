@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -13,56 +13,56 @@
         theme: {
           extend: {
             colors: {
-              "on-primary-fixed-variant": "#4e453a",
+              "on-primary-fixed-variant": "#52483c",
               "on-error-container": "#93000a",
               "error-container": "#ffdad6",
-              "secondary": "#5f5e5e",
-              "surface": "#fbf9f7",
-              "primary-container": "#e3d5c5",
-              "inverse-on-surface": "#f2f0ee",
-              "on-surface": "#1b1c1b",
-              "outline": "#7d766d",
-              "secondary-container": "#e2dfde",
-              "on-primary-container": "#665c4f",
-              "on-primary-fixed": "#211a11",
-              "on-background": "#1b1c1b",
-              "on-secondary-container": "#636262",
-              "on-surface-variant": "#4c463e",
-              "on-secondary-fixed-variant": "#474746",
-              "tertiary-fixed": "#e0e2eb",
-              "primary-fixed": "#efe0d0",
-              "surface-dim": "#dbdad8",
-              "outline-variant": "#cfc5bb",
-              "background": "#fbf9f7",
-              "on-tertiary-container": "#5a5d65",
-              "on-tertiary": "#ffffff",
+              "secondary": "var(--text)",
+              "surface": "var(--bg)",
+              "primary-container": "var(--accent)",
+              "inverse-on-surface": "var(--bg)",
+              "on-surface": "var(--text)",
+              "outline": "var(--accent)",
+              "secondary-container": "var(--accent)",
+              "on-primary-container": "var(--text)",
+              "on-primary-fixed": "var(--text)",
+              "on-background": "var(--text)",
+              "on-secondary-container": "#3f3933",
+              "on-surface-variant": "#4f473f",
+              "on-secondary-fixed-variant": "#4c453d",
+              "tertiary-fixed": "var(--accent)",
+              "primary-fixed": "var(--accent)",
+              "surface-dim": "var(--accent)",
+              "outline-variant": "var(--accent)",
+              "background": "var(--bg)",
+              "on-tertiary-container": "#403a34",
+              "on-tertiary": "#111111",
               "on-error": "#ffffff",
-              "on-tertiary-fixed-variant": "#44474e",
+              "on-tertiary-fixed-variant": "#4f473f",
               "error": "#ba1a1a",
-              "surface-container-low": "#f5f3f1",
-              "on-primary": "#ffffff",
-              "secondary-fixed": "#e5e2e1",
-              "surface-variant": "#e4e2e0",
-              "tertiary-container": "#d5d7e0",
-              "primary-fixed-dim": "#d2c4b5",
-              "primary": "#675d50",
-              "inverse-surface": "#30302f",
-              "tertiary": "#5b5e66",
-              "on-secondary-fixed": "#1c1b1b",
-              "surface-container-highest": "#e4e2e0",
-              "secondary-fixed-dim": "#c8c6c5",
-              "inverse-primary": "#d2c4b5",
-              "surface-container": "#efedec",
+              "surface-container-low": "var(--accent)",
+              "on-primary": "var(--bg)",
+              "secondary-fixed": "var(--accent)",
+              "surface-variant": "var(--accent)",
+              "tertiary-container": "var(--accent)",
+              "primary-fixed-dim": "var(--accent)",
+              "primary": "var(--text)",
+              "inverse-surface": "var(--text)",
+              "tertiary": "#6b6258",
+              "on-secondary-fixed": "#1f1a16",
+              "surface-container-highest": "var(--accent)",
+              "secondary-fixed-dim": "var(--accent)",
+              "inverse-primary": "var(--accent)",
+              "surface-container": "var(--accent)",
               "on-secondary": "#ffffff",
-              "surface-container-high": "#eae8e6",
-              "surface-tint": "#675d50",
-              "tertiary-fixed-dim": "#c4c6cf",
-              "surface-container-lowest": "#ffffff",
-              "surface-bright": "#fbf9f7",
-              "on-tertiary-fixed": "#181c22"
+              "surface-container-high": "var(--accent)",
+              "surface-tint": "var(--text)",
+              "tertiary-fixed-dim": "var(--accent)",
+              "surface-container-lowest": "var(--bg)",
+              "surface-bright": "var(--bg)",
+              "on-tertiary-fixed": "#1f1a16"
             },
             fontFamily: {
-              "headline": ["Newsreader", "serif"],
+              "headline": ["Jost", "sans-serif"],
               "body": ["Newsreader", "serif"],
               "label": ["Inter", "sans-serif"]
             },
@@ -81,9 +81,15 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+        :root {
+            --bg: #ffffff;
+            --text: #0a0a0a;
+            --accent: #e8dfd6;
+        }
         body {
-            background-color: #fbf9f7;
+            background-color: var(--bg);
             font-family: 'Newsreader', serif;
+            color: var(--text);
         }
         .editorial-grid {
             display: grid;
@@ -104,7 +110,7 @@
             }
         }
         .glass-nav {
-            background: rgba(251, 249, 247, 0.7);
+            background: rgba(255, 255, 255, 0.82);
             backdrop-filter: blur(20px);
         }
     </style>
@@ -113,13 +119,14 @@
 <!-- TopNavBar (Shared Component) -->
 <nav class="glass-nav sticky top-0 z-50 border-b border-outline-variant/10 px-8 py-6">
 <div class="max-w-7xl mx-auto flex justify-between items-center">
-<div class="flex items-center gap-4">
-<span class="font-headline text-xl font-semibold tracking-tight">Milk House Media Co</span>
-</div>
+<a class="flex items-center" href="Index.html">
+<img src="/logo.png" alt="Logo" class="h-12 w-auto object-contain md:h-14" width="180" height="60" onerror="this.onerror=null;this.src='Images/MHM.png';"/>
+</a>
 <div class="hidden md:flex gap-10">
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Index.html">Home</a>
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="about.html">About/Work</a>
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="ugcstudio.html">UGC Studio</a>
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Creator.html">Creator Network</a>
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="contact.html">Contact</a>
 </div>
@@ -188,12 +195,11 @@
 </div>
 <div class="masonry-video-container gap-8 space-y-8">
 <!-- Video Item 1 -->
-<div class="break-inside-avoid bg-surface-container shadow-sm group cursor-pointer overflow-hidden">
-<div class="relative aspect-[9/16] bg-primary-fixed">
-<img alt="UGC Video Thumbnail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Lifestyle creator using premium skincare product outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2GUHcVfNHEmkyHdNpDBrHdSv6lPOQGZjXcbPkp2pvGE5lKwKeKw2UaHUuDTU5pfilWmHq3dmDyKerbx0X0sSo14is_bpM2GM6ECtkfvZzldAMBe017C84aU_gardsqP4kaAuxbCGruX7S-fp8yIIzmyDnvIn2NU-s514QV6qSne4c6YmOkRRI76FDg-YxnwtyWCOvFL6UIqokQtSrKmteKfsuYlUnCfmjNPwXvJe0C2tUqL4V6xj-0APJ34xHeog0JD6-2YY9QTk"/>
-<div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</div>
+<div class="break-inside-avoid bg-surface-container shadow-sm overflow-hidden">
+<div class="relative aspect-[9/16] bg-primary-fixed p-2">
+<video autoplay loop muted playsinline class="h-full w-full rounded-xl object-cover">
+<source src="/videos/sample1.mp4" type="video/mp4"/>
+</video>
 </div>
 <div class="p-6">
 <span class="font-label text-[9px] tracking-widest uppercase text-outline">Lifestyle Partnerships</span>
@@ -262,8 +268,8 @@
                     Let's discuss how our UGC studio can elevate your presence with intentional, high-fidelity content.
                 </p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-<button class="w-full sm:w-auto bg-primary text-on-primary px-12 py-4 font-label text-xs tracking-[0.2em] uppercase">Start a Project</button>
-<button class="w-full sm:w-auto border border-primary text-primary px-12 py-4 font-label text-xs tracking-[0.2em] uppercase">View Full Deck</button>
+<a class="w-full sm:w-auto inline-block bg-primary text-on-primary px-12 py-4 font-label text-xs tracking-[0.2em] uppercase" href="contact.html#inquiry-form">Start a Project</a>
+<a class="w-full sm:w-auto inline-block border border-primary text-primary px-12 py-4 font-label text-xs tracking-[0.2em] uppercase" href="mailto:hello@milkhousemedia.co?subject=Request%20the%20UGC%20Studio%20Deck">View Full Deck</a>
 </div>
 </div>
 </section>

@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -13,56 +13,56 @@
         theme: {
           extend: {
             colors: {
-              "on-primary-fixed-variant": "#4e453a",
+              "on-primary-fixed-variant": "#52483c",
               "on-error-container": "#93000a",
               "error-container": "#ffdad6",
-              "secondary": "#5f5e5e",
-              "surface": "#fbf9f7",
-              "primary-container": "#e3d5c5",
-              "inverse-on-surface": "#f2f0ee",
-              "on-surface": "#1b1c1b",
-              "outline": "#7d766d",
-              "secondary-container": "#e2dfde",
-              "on-primary-container": "#665c4f",
-              "on-primary-fixed": "#211a11",
-              "on-background": "#1b1c1b",
-              "on-secondary-container": "#636262",
-              "on-surface-variant": "#4c463e",
-              "on-secondary-fixed-variant": "#474746",
-              "tertiary-fixed": "#e0e2eb",
-              "primary-fixed": "#efe0d0",
-              "surface-dim": "#dbdad8",
-              "outline-variant": "#cfc5bb",
-              "background": "#fbf9f7",
-              "on-tertiary-container": "#5a5d65",
-              "on-tertiary": "#ffffff",
+              "secondary": "var(--text)",
+              "surface": "var(--bg)",
+              "primary-container": "var(--accent)",
+              "inverse-on-surface": "var(--bg)",
+              "on-surface": "var(--text)",
+              "outline": "var(--accent)",
+              "secondary-container": "var(--accent)",
+              "on-primary-container": "var(--text)",
+              "on-primary-fixed": "var(--text)",
+              "on-background": "var(--text)",
+              "on-secondary-container": "#3f3933",
+              "on-surface-variant": "#4f473f",
+              "on-secondary-fixed-variant": "#4c453d",
+              "tertiary-fixed": "var(--accent)",
+              "primary-fixed": "var(--accent)",
+              "surface-dim": "var(--accent)",
+              "outline-variant": "var(--accent)",
+              "background": "var(--bg)",
+              "on-tertiary-container": "#403a34",
+              "on-tertiary": "#111111",
               "on-error": "#ffffff",
-              "on-tertiary-fixed-variant": "#44474e",
+              "on-tertiary-fixed-variant": "#4f473f",
               "error": "#ba1a1a",
-              "surface-container-low": "#f5f3f1",
-              "on-primary": "#ffffff",
-              "secondary-fixed": "#e5e2e1",
-              "surface-variant": "#e4e2e0",
-              "tertiary-container": "#d5d7e0",
-              "primary-fixed-dim": "#d2c4b5",
-              "primary": "#675d50",
-              "inverse-surface": "#30302f",
-              "tertiary": "#5b5e66",
-              "on-secondary-fixed": "#1c1b1b",
-              "surface-container-highest": "#e4e2e0",
-              "secondary-fixed-dim": "#c8c6c5",
-              "inverse-primary": "#d2c4b5",
-              "surface-container": "#efedec",
+              "surface-container-low": "var(--accent)",
+              "on-primary": "var(--bg)",
+              "secondary-fixed": "var(--accent)",
+              "surface-variant": "var(--accent)",
+              "tertiary-container": "var(--accent)",
+              "primary-fixed-dim": "var(--accent)",
+              "primary": "var(--text)",
+              "inverse-surface": "var(--text)",
+              "tertiary": "#6b6258",
+              "on-secondary-fixed": "#1f1a16",
+              "surface-container-highest": "var(--accent)",
+              "secondary-fixed-dim": "var(--accent)",
+              "inverse-primary": "var(--accent)",
+              "surface-container": "var(--accent)",
               "on-secondary": "#ffffff",
-              "surface-container-high": "#eae8e6",
-              "surface-tint": "#675d50",
-              "tertiary-fixed-dim": "#c4c6cf",
-              "surface-container-lowest": "#ffffff",
-              "surface-bright": "#fbf9f7",
-              "on-tertiary-fixed": "#181c22"
+              "surface-container-high": "var(--accent)",
+              "surface-tint": "var(--text)",
+              "tertiary-fixed-dim": "var(--accent)",
+              "surface-container-lowest": "var(--bg)",
+              "surface-bright": "var(--bg)",
+              "on-tertiary-fixed": "#1f1a16"
             },
             fontFamily: {
-              "headline": ["Newsreader", "serif"],
+              "headline": ["Jost", "sans-serif"],
               "body": ["Newsreader", "serif"],
               "label": ["Inter", "sans-serif"]
             },
@@ -72,10 +72,16 @@
       }
     </script>
 <style>
+      :root {
+        --bg: #ffffff;
+        --text: #0a0a0a;
+        --accent: #e8dfd6;
+      }
       body {
-        background-color: #fbf9f7;
+        background-color: var(--bg);
         font-family: 'Newsreader', serif;
         -webkit-font-smoothing: antialiased;
+        color: var(--text);
       }
       .material-symbols-outlined {
         font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -91,16 +97,16 @@
         left: 0;
         width: 100%;
         height: 1px;
-        background-color: #675d50;
+        background-color: var(--text);
       }
       .glass-nav {
-        background: rgba(251, 249, 247, 0.7);
+        background: rgba(255, 255, 255, 0.82);
         backdrop-filter: blur(20px);
       }
       /* Custom focus styles for inputs as per design system */
       input:focus, textarea:focus, select:focus {
         outline: none !important;
-        border-bottom: 2px solid #675d50 !important;
+        border-bottom: 2px solid var(--text) !important;
         box-shadow: none !important;
       }
     </style>
@@ -109,13 +115,14 @@
 <!-- TopNavBar (Shared Component) -->
 <nav class="glass-nav sticky top-0 z-50 border-b border-outline-variant/10 px-8 py-6">
 <div class="max-w-7xl mx-auto flex justify-between items-center">
-<div class="flex items-center gap-4">
-<span class="font-headline text-xl font-semibold tracking-tight">Milk House Media Co</span>
-</div>
+<a class="flex items-center" href="Index.html">
+<img src="/logo.png" alt="Logo" class="h-12 w-auto object-contain md:h-14" width="180" height="60" onerror="this.onerror=null;this.src='Images/MHM.png';"/>
+</a>
 <div class="hidden md:flex gap-10">
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Index.html">Home</a>
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="about.html">About/Work</a>
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="ugcstudio.html">UGC Studio</a>
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="Creator.html">Creator Network</a>
 <a class="font-label text-[0.6875rem] uppercase tracking-[0.05em] hover:text-primary transition-colors" href="contact.html">Contact</a>
 </div>
@@ -147,37 +154,38 @@
 <!-- Image Side: The Form Assistant -->
 <div class="relative min-h-[500px] lg:min-h-full overflow-hidden">
 <img alt="Professional female representative" class="absolute inset-0 w-full h-full object-cover" data-alt="Professional female representative in elegant office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSZM4OkyC0ni7bu21KqT211yDH0n8En92fyC1cRGbZlE0bdGVD1JXBznFba5PyhhCOok6ns40IQeNed6GbhivLP999c3PPtcXT-hHKeVausK5t_d4Rus25nfEEbQArmfS9FDbeWBEZXvcUbe91-0y_Gra6ps_SlNS5zz9Lrg2lgBdM-Rmowaf83hiQXHuxSwOHnE_HBqekK26uI_uNnOkuYXvdMxS2mdRaMwyg3OHc7cktzjcxOIfri8Js5MuBN_sT3Lkw6MHk9FY"/>
-<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
-<div class="absolute bottom-12 left-12 right-12 bg-surface/90 backdrop-blur-md p-8 border-l-4 border-primary">
-<span class="font-label text-[10px] uppercase tracking-widest text-outline block mb-2">Director of Strategy</span>
-<p class="font-headline text-xl italic text-on-surface mb-4">"I personally review every inquiry to ensure we're the right fit for your vision."</p>
+<div class="absolute inset-0 bg-black/35"></div>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/35 to-transparent h-2/3"></div>
+<div class="absolute bottom-12 left-12 right-12 bg-black/65 backdrop-blur-md p-8 border-l-4 border-primary shadow-2xl">
+<span class="font-label text-[10px] uppercase tracking-widest text-white block mb-2">Director of Strategy</span>
+<p class="font-headline text-xl italic text-white leading-relaxed mb-4">"I personally review every inquiry to ensure we're the right fit for your vision."</p>
 <div class="flex items-center gap-3">
 <span class="w-8 h-[1px] bg-primary"></span>
-<span class="font-label text-xs uppercase tracking-widest">Sarah J. Miller</span>
+<span class="font-label text-xs uppercase tracking-widest text-white">Sarah J. Miller</span>
 </div>
 </div>
 </div>
 <!-- Form Side -->
 <div class="p-12 lg:p-20 bg-surface-container-low">
-<form class="space-y-12">
+<form action="mailto:hello@milkhousemedia.co?subject=Project%20Inquiry" class="space-y-12" enctype="text/plain" id="inquiry-form" method="post">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 <div class="relative">
 <label class="font-label text-[10px] uppercase tracking-[0.1em] text-outline mb-2 block">Name</label>
-<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary placeholder:text-outline-variant/50" placeholder="Your full name" type="text"/>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary placeholder:text-outline-variant/50" name="Name" placeholder="Your full name" required="" type="text"/>
 </div>
 <div class="relative">
 <label class="font-label text-[10px] uppercase tracking-[0.1em] text-outline mb-2 block">Email</label>
-<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary placeholder:text-outline-variant/50" placeholder="email@company.com" type="email"/>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary placeholder:text-outline-variant/50" name="Email" placeholder="email@company.com" required="" type="email"/>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 <div class="relative">
 <label class="font-label text-[10px] uppercase tracking-[0.1em] text-outline mb-2 block">Company</label>
-<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary placeholder:text-outline-variant/50" placeholder="Brand or Agency name" type="text"/>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary placeholder:text-outline-variant/50" name="Company" placeholder="Brand or Agency name" type="text"/>
 </div>
 <div class="relative">
 <label class="font-label text-[10px] uppercase tracking-[0.1em] text-outline mb-2 block">Timeline</label>
-<select class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary appearance-none">
+<select class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary appearance-none" name="Timeline">
 <option disabled="" selected="" value="">Select expected start</option>
 <option>Immediate (Next 30 days)</option>
 <option>Planning (1-3 months)</option>
@@ -187,7 +195,7 @@
 </div>
 <div class="relative">
 <label class="font-label text-[10px] uppercase tracking-[0.1em] text-outline mb-2 block">What you need help with</label>
-<textarea class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary placeholder:text-outline-variant/50 resize-none" placeholder="Tell us about your project or partnership idea..." rows="4"></textarea>
+<textarea class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-3 px-0 font-body text-lg focus:border-primary placeholder:text-outline-variant/50 resize-none" name="Project Details" placeholder="Tell us about your project or partnership idea..." required="" rows="4"></textarea>
 </div>
 <div class="pt-4">
 <button class="group flex items-center gap-6 bg-primary text-on-primary px-12 py-5 hover:bg-on-primary-fixed-variant transition-all w-full md:w-auto" type="submit">
